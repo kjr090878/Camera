@@ -63,9 +63,6 @@
 				3DDA995F1BD526A700653D7F /* ViewController.h */,
 				3DDA99601BD526A800653D7F /* ViewController.m */,
 				3DDA99621BD526A800653D7F /* Main.storyboard */,
-				3DDA99651BD526A800653D7F /* Assets.xcassets */,
-				3DDA99671BD526A800653D7F /* LaunchScreen.storyboard */,
-				3DDA996A1BD526A800653D7F /* Info.plist */,
 				3DDA99591BD526A700653D7F /* Supporting Files */,
 			);
 			path = Camera;
@@ -74,6 +71,9 @@
 		3DDA99591BD526A700653D7F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DDA99651BD526A800653D7F /* Assets.xcassets */,
+				3DDA99671BD526A800653D7F /* LaunchScreen.storyboard */,
+				3DDA996A1BD526A800653D7F /* Info.plist */,
 				3DDA995A1BD526A700653D7F /* main.m */,
 			);
 			name = "Supporting Files";
