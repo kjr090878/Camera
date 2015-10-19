@@ -10,9 +10,16 @@
 
 @interface FilterViewController ()
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *filterImageView;
+
+@property (weak, nonatomic) IBOutlet UICollectionView *filterCollectioView;
+
 @end
 
 @implementation FilterViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

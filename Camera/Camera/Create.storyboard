@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W4Z-dH-MB0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -16,21 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-Qv-LE4">
-                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUA-8p-a52">
                                 <rect key="frame" x="20" y="518" width="110" height="62"/>
                                 <animations/>
                                 <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="takePicture:" destination="rSk-t4-UUm" eventType="touchUpInside" id="C0k-Iz-78c"/>
+                                    <action selector="takePictureButton:" destination="rSk-t4-UUm" eventType="touchUpInside" id="rYP-7A-MZB"/>
+                                </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2T-Qv-LE4">
+                                <rect key="frame" x="0.0" y="72" width="600" height="428"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ldQ-vb-wNz"/>
+                    <connections>
+                        <outlet property="captureView" destination="i2T-Qv-LE4" id="G7s-Se-wQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kh-7w-bbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +86,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="filterCollectioView" destination="SUa-2K-bAJ" id="Iaq-DW-RyR"/>
+                        <outlet property="filterImageView" destination="MOQ-Sr-tzm" id="RFa-RK-D1r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3T-b8-IdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,11 +122,18 @@
                                 <rect key="frame" x="260" y="562" width="81" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="e3N-M4-on0" eventType="touchUpInside" id="Zv0-rL-wJR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="submitImageView" destination="Bd8-Uu-9DS" id="bkc-8V-g1F"/>
+                        <outlet property="submitTextView" destination="heY-ds-Kk1" id="Ebx-uh-aWT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kap-0l-AlN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

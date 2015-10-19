@@ -9,6 +9,13 @@
 #import "RegisterViewController.h"
 
 @interface RegisterViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *userNameLabel;
+
+
+@property (weak, nonatomic) IBOutlet UITextField *emailLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordLabel;
+
 
 @end
 

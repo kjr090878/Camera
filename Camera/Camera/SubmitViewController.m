@@ -9,10 +9,18 @@
 #import "SubmitViewController.h"
 
 @interface SubmitViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *submitTextView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *submitImageView;
+
+
 
 @end
 
 @implementation SubmitViewController
+- (IBAction)submitButton:(id)sender {
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

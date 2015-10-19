@@ -8,7 +8,11 @@
 
 #import "SelfieTableViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface SelfieTableViewController ()
+
+@property int age;
 
 @end
 
@@ -16,6 +20,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        
+    if ([PFUser currentUser] != nil) {
+        
+        // logged in
+        
+    } else {
+        
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+        
+        UINavigationController * nc = [storyboard instantiateInitialViewController];
+        
+        [self presentViewController:nc animated:YES completion:nil];
+        
+//        let storyboard = UIStoryboard(name: "ambiguousStoryboard", bundle: nil)
+//        
+//        if let loginVC = storyboard.instantiateInitialViewController() {
+//            
+//            presentViewController(loginVC, animated: true, completion: nil)
+//            
+//        }
+        
+    }
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

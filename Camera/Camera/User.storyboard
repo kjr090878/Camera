@@ -21,6 +21,7 @@
                                 <animations/>
                                 <state key="normal" title="Register"/>
                                 <connections>
+                                    <action selector="registerChoiceView:" destination="8eg-hz-x1p" eventType="touchUpInside" id="AoT-t5-Sl5"/>
                                     <segue destination="RUa-Zq-tnn" kind="show" id="Epv-lc-h3v"/>
                                 </connections>
                             </button>
@@ -29,6 +30,7 @@
                                 <animations/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginChoiceView:" destination="8eg-hz-x1p" eventType="touchUpInside" id="1Xp-Qc-j89"/>
                                     <segue destination="Rmh-V6-WJj" kind="show" id="TCa-W1-TZG"/>
                                 </connections>
                             </button>
@@ -36,6 +38,9 @@
                                 <rect key="frame" x="215" y="415" width="168" height="46"/>
                                 <animations/>
                                 <state key="normal" title="Twitter Connect"/>
+                                <connections>
+                                    <action selector="twitterChoiceView:" destination="8eg-hz-x1p" eventType="touchUpInside" id="9no-6b-4nb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -90,12 +95,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-jf-2Gx">
-                                <rect key="frame" x="20" y="225" width="125" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DoB-Vp-dao">
                                 <rect key="frame" x="20" y="300" width="133" height="102"/>
                                 <animations/>
@@ -104,10 +103,21 @@
                                     <segue destination="MBV-5S-hcK" kind="show" id="Wc9-WS-NYn"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xd-jf-2Gx">
+                                <rect key="frame" x="20" y="225" width="125" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="HAo-fU-j2V" id="eqa-nA-yCA"/>
+                        <outlet property="passwordLabel" destination="8xd-jf-2Gx" id="GCh-Vx-pKD"/>
+                        <outlet property="userNameLabel" destination="Ev9-YI-2QU" id="ccw-Pe-WZf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnx-Wa-luu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

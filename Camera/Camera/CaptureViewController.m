@@ -10,9 +10,18 @@
 
 @interface CaptureViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *captureView;
+- (IBAction)takePictureButton:(id)sender;
+
+
 @end
 
 @implementation CaptureViewController
+
+
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,4 +43,6 @@
 }
 */
 
+- (IBAction)takePictureButton:(id)sender {
+}
 @end
