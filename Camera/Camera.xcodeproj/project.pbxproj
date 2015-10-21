@@ -159,8 +159,8 @@
 				3DDA99801BD5781A00653D7F /* CaptureViewController.h */,
 				3DDA99811BD5781A00653D7F /* CaptureViewController.m */,
 				3DDA99831BD5783000653D7F /* FilterViewController.h */,
-				3DDA998D1BD5791C00653D7F /* FilterView */,
 				3DDA99841BD5783000653D7F /* FilterViewController.m */,
+				3DDA998D1BD5791C00653D7F /* FilterView */,
 				3DDA99861BD5783F00653D7F /* SubmitViewController.h */,
 				3DDA99871BD5783F00653D7F /* SubmitViewController.m */,
 			);

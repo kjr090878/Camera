@@ -66,38 +66,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-Sr-tzm">
-                                <rect key="frame" x="0.0" y="0.0" width="653" height="495"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-Sr-tzm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                                 <animations/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-2K-bAJ">
-                                <rect key="frame" x="0.0" y="494" width="600" height="106"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-2K-bAJ">
+                                <rect key="frame" x="0.0" y="450" width="600" height="100"/>
                                 <animations/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MVm-8Z-Prc">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qxX-yY-rIc"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MVm-8Z-Prc">
+                                    <size key="itemSize" width="80" height="80"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="z8Y-Ox-h5Z" customClass="FilterCollectionViewCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterCell" id="z8Y-Ox-h5Z" customClass="FilterCollectionViewCell">
+                                        <rect key="frame" x="10" y="10" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EIS-vk-I2h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="FilterImageView" destination="EIS-vk-I2h" id="G8G-cz-r4c"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNR-L2-A5g">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.59123137839999995" green="1" blue="0.66697563140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hep-m6-pWF"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0020116575391416524" green="0.0028803661616161325" blue="0.0020576775472274881" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eNR-L2-A5g" firstAttribute="leading" secondItem="mc8-dz-iZI" secondAttribute="leading" id="30x-h1-Vdi"/>
+                            <constraint firstAttribute="trailing" secondItem="SUa-2K-bAJ" secondAttribute="trailing" id="90N-5X-oyP"/>
+                            <constraint firstItem="wlv-Tz-bLa" firstAttribute="top" secondItem="eNR-L2-A5g" secondAttribute="bottom" id="96q-ls-lEY"/>
+                            <constraint firstItem="SUa-2K-bAJ" firstAttribute="top" secondItem="MOQ-Sr-tzm" secondAttribute="bottom" id="Dei-hz-cDS"/>
+                            <constraint firstAttribute="trailing" secondItem="eNR-L2-A5g" secondAttribute="trailing" id="Eb9-1Z-SDQ"/>
+                            <constraint firstItem="MOQ-Sr-tzm" firstAttribute="top" secondItem="mc8-dz-iZI" secondAttribute="top" id="Wt6-7s-0UM"/>
+                            <constraint firstAttribute="trailing" secondItem="MOQ-Sr-tzm" secondAttribute="trailing" id="YV4-4T-FgI"/>
+                            <constraint firstItem="SUa-2K-bAJ" firstAttribute="leading" secondItem="mc8-dz-iZI" secondAttribute="leading" id="YgU-l6-pov"/>
+                            <constraint firstItem="MOQ-Sr-tzm" firstAttribute="leading" secondItem="mc8-dz-iZI" secondAttribute="leading" id="fxI-Qa-6gF"/>
+                            <constraint firstItem="eNR-L2-A5g" firstAttribute="top" secondItem="SUa-2K-bAJ" secondAttribute="bottom" id="hNY-iT-LA8"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="filterColectionView" destination="SUa-2K-bAJ" id="wmF-O3-Opi"/>
                         <outlet property="filterImageView" destination="MOQ-Sr-tzm" id="L9Y-W6-HsS"/>
                     </connections>
                 </viewController>

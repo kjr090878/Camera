@@ -86,7 +86,7 @@
     
     // pass the image
     
-    NSLog(@"%@",filterVC.filterImageView);
+    #warning FIX THIS : Image is reversed horizontally.
     
     filterVC.originalImage = image;
     
