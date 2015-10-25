@@ -37,6 +37,16 @@
 		3DDA99C81BD6766800653D7F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA99BD1BD6766800653D7F /* AudioToolbox.framework */; settings = {ASSET_TAGS = (); }; };
 		3DDA99C91BD6766800653D7F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA99BE1BD6766800653D7F /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		3DDA99CA1BD6766800653D7F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDA99BF1BD6766800653D7F /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		3DDA99CD1BDA81C600653D7F /* splash_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99CC1BDA81C600653D7F /* splash_page.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99D11BDAAD2900653D7F /* twitter_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99CE1BDAAD2900653D7F /* twitter_blue.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99D21BDAAD2900653D7F /* twitter_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99CF1BDAAD2900653D7F /* twitter_grey.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99D31BDAAD2900653D7F /* twitter_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D01BDAAD2900653D7F /* twitter_white.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99D51BDAB03000653D7F /* selfie_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D41BDAB03000653D7F /* selfie_blue.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99DA1BDAB33800653D7F /* create_capture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D61BDAB33800653D7F /* create_capture.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99DB1BDAB33800653D7F /* create_filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D71BDAB33800653D7F /* create_filter.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99DC1BDAB33800653D7F /* create_post_keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D81BDAB33800653D7F /* create_post_keyboard.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99DD1BDAB33800653D7F /* create_post.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99D91BDAB33800653D7F /* create_post.png */; settings = {ASSET_TAGS = (); }; };
+		3DDA99DF1BDAB38C00653D7F /* user_register_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA99DE1BDAB38C00653D7F /* user_register_avatar.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +95,17 @@
 		3DDA99BD1BD6766800653D7F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3DDA99BE1BD6766800653D7F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		3DDA99BF1BD6766800653D7F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		3DDA99CB1BD8421900653D7F /* ImageEditing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageEditing.h; sourceTree = "<group>"; };
+		3DDA99CC1BDA81C600653D7F /* splash_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_page.png; sourceTree = "<group>"; };
+		3DDA99CE1BDAAD2900653D7F /* twitter_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_blue.png; sourceTree = "<group>"; };
+		3DDA99CF1BDAAD2900653D7F /* twitter_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_grey.png; sourceTree = "<group>"; };
+		3DDA99D01BDAAD2900653D7F /* twitter_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_white.png; sourceTree = "<group>"; };
+		3DDA99D41BDAB03000653D7F /* selfie_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selfie_blue.png; sourceTree = "<group>"; };
+		3DDA99D61BDAB33800653D7F /* create_capture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create_capture.png; sourceTree = "<group>"; };
+		3DDA99D71BDAB33800653D7F /* create_filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create_filter.png; sourceTree = "<group>"; };
+		3DDA99D81BDAB33800653D7F /* create_post_keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create_post_keyboard.png; sourceTree = "<group>"; };
+		3DDA99D91BDAB33800653D7F /* create_post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = create_post.png; sourceTree = "<group>"; };
+		3DDA99DE1BDAB38C00653D7F /* user_register_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_register_avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +133,9 @@
 		3DDA994D1BD526A700653D7F = {
 			isa = PBXGroup;
 			children = (
-				3DDA99B41BD6757000653D7F /* Frameworks */,
 				3DDA99581BD526A700653D7F /* Camera */,
 				3DDA99571BD526A700653D7F /* Products */,
+				3DDA99B41BD6757000653D7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +150,7 @@
 		3DDA99581BD526A700653D7F /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				3DDA99CB1BD8421900653D7F /* ImageEditing.h */,
 				3DDA99621BD526A800653D7F /* Main.storyboard */,
 				3DDA99751BD56CC200653D7F /* Main Flow */,
 				3DDA99701BD56C3500653D7F /* Create.storyboard */,
@@ -146,6 +168,16 @@
 				3DDA995C1BD526A700653D7F /* AppDelegate.h */,
 				3DDA995D1BD526A700653D7F /* AppDelegate.m */,
 				3DDA99651BD526A800653D7F /* Assets.xcassets */,
+				3DDA99DE1BDAB38C00653D7F /* user_register_avatar.png */,
+				3DDA99D61BDAB33800653D7F /* create_capture.png */,
+				3DDA99D71BDAB33800653D7F /* create_filter.png */,
+				3DDA99D81BDAB33800653D7F /* create_post_keyboard.png */,
+				3DDA99D91BDAB33800653D7F /* create_post.png */,
+				3DDA99D41BDAB03000653D7F /* selfie_blue.png */,
+				3DDA99CE1BDAAD2900653D7F /* twitter_blue.png */,
+				3DDA99CF1BDAAD2900653D7F /* twitter_grey.png */,
+				3DDA99D01BDAAD2900653D7F /* twitter_white.png */,
+				3DDA99CC1BDA81C600653D7F /* splash_page.png */,
 				3DDA99671BD526A800653D7F /* LaunchScreen.storyboard */,
 				3DDA996A1BD526A800653D7F /* Info.plist */,
 				3DDA995A1BD526A700653D7F /* main.m */,
@@ -290,10 +322,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDA99711BD56C3500653D7F /* Create.storyboard in Resources */,
+				3DDA99DB1BDAB33800653D7F /* create_filter.png in Resources */,
 				3DDA99731BD56C5000653D7F /* User.storyboard in Resources */,
+				3DDA99DF1BDAB38C00653D7F /* user_register_avatar.png in Resources */,
+				3DDA99D11BDAAD2900653D7F /* twitter_blue.png in Resources */,
+				3DDA99DA1BDAB33800653D7F /* create_capture.png in Resources */,
 				3DDA99691BD526A800653D7F /* LaunchScreen.storyboard in Resources */,
+				3DDA99D21BDAAD2900653D7F /* twitter_grey.png in Resources */,
+				3DDA99D51BDAB03000653D7F /* selfie_blue.png in Resources */,
+				3DDA99DC1BDAB33800653D7F /* create_post_keyboard.png in Resources */,
+				3DDA99CD1BDA81C600653D7F /* splash_page.png in Resources */,
 				3DDA99661BD526A800653D7F /* Assets.xcassets in Resources */,
+				3DDA99DD1BDAB33800653D7F /* create_post.png in Resources */,
 				3DDA99641BD526A800653D7F /* Main.storyboard in Resources */,
+				3DDA99D31BDAAD2900653D7F /* twitter_white.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = "/Users/kellyrobinson/_resources/Frameworks/**";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -439,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = "/Users/kellyrobinson/_resources/Frameworks/**";
 				INFOPLIST_FILE = Camera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

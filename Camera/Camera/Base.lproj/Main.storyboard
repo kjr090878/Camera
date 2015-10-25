@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="JUp-IX-svi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mg3-1c-Vdz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -21,28 +21,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbt-TO-Pgd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="104"/>
+            <point key="canvasLocation" x="167" y="104"/>
         </scene>
         <!--Selfies-->
         <scene sceneID="Pkn-JO-wnD">
             <objects>
                 <tableViewController id="jW9-Y4-eQy" customClass="SelfieTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="370" sectionHeaderHeight="28" sectionFooterHeight="28" id="AVJ-Jc-FGo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="475" sectionHeaderHeight="28" sectionFooterHeight="28" id="AVJ-Jc-FGo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="370" id="Z52-9L-kFY" customClass="SelfieTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="370"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelfieCell" rowHeight="475" id="Z52-9L-kFY" customClass="SelfieTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="475"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z52-9L-kFY" id="7Ej-65-8Xe">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="369.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="474.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dY-y1-BeI">
+                                            <rect key="frame" x="0.0" y="-15" width="320" height="220"/>
+                                            <animations/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bts-Ib-aR3">
+                                            <rect key="frame" x="4" y="146" width="312" height="66"/>
+                                            <animations/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-ft-FgP">
+                                            <rect key="frame" x="0.0" y="254" width="320" height="220"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
+                                    <outlet property="selfieImageView" destination="9dY-y1-BeI" id="cdy-Lk-7l9"/>
                                     <segue destination="J6Z-kK-p0c" kind="show" id="LEb-aZ-4Vl"/>
                                 </connections>
                             </tableViewCell>
@@ -53,15 +71,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Selfies" id="Xfs-Q1-n6V"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJc-TN-nds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="152" y="104"/>
+            <point key="canvasLocation" x="-258" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BnY-vH-4bW">
             <objects>
                 <navigationController id="sdF-pJ-KgH" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zQR-Dy-E46">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

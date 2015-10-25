@@ -19,8 +19,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
   
     [Parse setApplicationId:@"aewOQbAttXfJT1tkxY8YuTCI4QMQTBluEjF3NeX4" clientKey:@"1OJ7HSa7QmIR83cAlT83tNSyoYfBnOAziwKGMjb2"];
+    
+    UINavigationController * nc;
+    
+    if ([PFUser currentUser] != nil) {
+        
+        UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        nc = [mainStoryboard instantiateInitialViewController];
+        // we are looged in
+        
+    } else {
+        
+    // not logged in
+        UIStoryboard * userStoryboard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+        nc = [userStoryboard instantiateInitialViewController];
+        
+    }
+    
+    self.window.rootViewController = nc;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

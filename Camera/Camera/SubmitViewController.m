@@ -13,28 +13,40 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *captionTextView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *filteredImageView;
 
 @end
 
 @implementation SubmitViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    self.filteredImageView.image = self.filteredImage;
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 - (IBAction)submitSelfie:(id)sender {
     
     PFObject * selfie = [PFObject objectWithClassName:@"Selfie"];
     
+    // turn UIImage iunto NSData (basically getting the raw data)
+    
+    NSData * imageData = UIImagePNGRepresentation(self.filteredImage);
+    
+    // create a Parse File with the raw data, so that it cn store the image
+    
+    PFFile * imageFile = [PFFile fileWithData:imageData];
+    
     // let selfie = PFObject(className:"Selfie")
     
-    selfie[@"caption"] = self.captionTextView.text;
+    selfie[@"image"] = imageFile; // pffile column
+    
+    selfie[@"caption"] = self.captionTextView.text; // string column
+    
+    selfie[@"user"] = [PFUser currentUser]; // pointer -> _User column
     
     // selfie["caption] = captionTextView.text
     

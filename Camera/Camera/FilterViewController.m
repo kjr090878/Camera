@@ -10,17 +10,11 @@
 
 #import "FilterCollectionViewCell.h"
 
-UIImage * resizeImage(UIImage * image, CGSize newSize) {
-    
-    UIGraphicsBeginImageContext(newSize);
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return newImage;
-    
-}
+#import "ImageEditing.h"
 
-@interface FilterViewController () <UICollectionViewDataSource,UICollectionViewDataSource>
+#import "SubmitViewController.h"
+
+@interface FilterViewController () <UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *filterImageView;
 
@@ -44,7 +38,9 @@ UIImage * resizeImage(UIImage * image, CGSize newSize) {
     self.filterColectionView.delegate = self;
     
     
-    filterNames = [CIFilter filterNamesInCategory:kCICategoryColorEffect];
+//    filterNames = [CIFilter filterNamesInCategory:kCICategoryColorEffect];
+    
+    filterNames = [CIFilter filterNamesInCategories:nil];
     
     [self.filterColectionView reloadData];
     
@@ -60,7 +56,7 @@ UIImage * resizeImage(UIImage * image, CGSize newSize) {
     FilterCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"FilterCell" forIndexPath:indexPath];
     
     cell.filterName = filterNames[indexPath.item];
-    #warning FIX THIS
+//    #warning FIX THIS
     
     UIImage * resizedImage = resizeImage(self.originalImage, CGSizeMake(80,80));
     cell.originalImage = resizedImage;
@@ -68,6 +64,28 @@ UIImage * resizeImage(UIImage * image, CGSize newSize) {
     return cell;
     
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    FilterCollectionViewCell * cell = (FilterCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    self.filterImageView.image = filterImage(self.originalImage, cell.filterName);
+    
+}
+- (IBAction)pressedNext:(id)sender {
+    
+    SubmitViewController * submitVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SubnmitVC"];
+
+    
+    submitVC.filteredImage = self.filterImageView.image;
+    
+    [self.navigationController pushViewController:submitVC animated:YES];
+    
+    
+    
+    
+}
+
 
 
 @end
