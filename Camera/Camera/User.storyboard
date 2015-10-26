@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qGT-cU-nFy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qGT-cU-nFy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Choice View Controller-->
@@ -43,7 +43,7 @@
                                 </constraints>
                                 <state key="normal" image="twitter_white"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie_green" translatesAutoresizingMaskIntoConstraints="NO" id="nsc-AU-NAe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="selfie_green" translatesAutoresizingMaskIntoConstraints="NO" id="nsc-AU-NAe">
                                 <rect key="frame" x="0.0" y="64" width="375" height="413"/>
                                 <animations/>
                                 <constraints>
@@ -145,9 +145,17 @@
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_green" translatesAutoresizingMaskIntoConstraints="NO" id="7po-1R-m2n">
-                                <rect key="frame" x="20" y="0.0" width="335" height="71"/>
+                                <rect key="frame" x="108" y="13" width="158" height="38"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW4-JE-Hnm">
+                                <rect key="frame" x="20" y="20" width="44" height="39"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="back_arrow"/>
+                                <connections>
+                                    <action selector="back:" destination="Rmh-V6-WJj" eventType="touchUpInside" id="dIW-0G-FA3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkF-TE-bb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175.5" y="722.5"/>
+            <point key="canvasLocation" x="2039.5" y="776.5"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Dyg-vP-TNx">
@@ -236,14 +244,18 @@
                                 <rect key="frame" x="20" y="363" width="335" height="290"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-37-RFz">
+                                <rect key="frame" x="37" y="26" width="24" height="22"/>
+                                <animations/>
+                                <state key="normal" image="back_arrow"/>
+                                <connections>
+                                    <action selector="back:" destination="RUa-Zq-tnn" eventType="touchUpInside" id="8iR-zS-AKl"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="LLf-AV-QAm">
-                                <rect key="frame" x="103" y="0.0" width="185" height="76"/>
+                                <rect key="frame" x="103" y="15" width="185" height="43"/>
                                 <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oT0-37-RFz">
-                                <rect key="frame" x="31" y="15" width="55" height="45"/>
-                                <animations/>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnx-Wa-luu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039.5" y="16.5"/>
+            <point key="canvasLocation" x="2039.5" y="31.5"/>
         </scene>
         <!--Avatar View Controller-->
         <scene sceneID="Wqm-xz-63M">
@@ -297,8 +309,16 @@
                                 <rect key="frame" x="61" y="222" width="256" height="218"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGR-aQ-rks">
+                                <rect key="frame" x="59" y="58" width="38" height="40"/>
+                                <animations/>
+                                <state key="normal" image="back_arrow"/>
+                                <connections>
+                                    <action selector="back:" destination="MBV-5S-hcK" eventType="touchUpInside" id="ewi-15-DUC"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_blue" translatesAutoresizingMaskIntoConstraints="NO" id="WFP-Tf-RZR">
-                                <rect key="frame" x="42" y="90" width="290" height="91"/>
+                                <rect key="frame" x="96" y="42" width="203" height="56"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -308,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5R5-ek-p4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2903.5" y="24.5"/>
+            <point key="canvasLocation" x="2592.5" y="31.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hkv-BS-nhd">
@@ -331,6 +351,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back_arrow" width="13" height="18"/>
         <image name="logo_blue" width="111" height="58"/>
         <image name="logo_green" width="111" height="58"/>
         <image name="selfie_blue" width="115" height="331"/>

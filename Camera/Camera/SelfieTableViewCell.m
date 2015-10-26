@@ -13,6 +13,11 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *captionLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+
+
 
 @end
 

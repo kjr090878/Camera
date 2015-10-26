@@ -10,6 +10,13 @@
 
 @interface SelfieDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UITextView *captionTextView;
+
+
 @end
 
 @implementation SelfieDetailViewController
@@ -19,19 +26,15 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)flagSelfie:(id)sender {
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)winkSelfie:(id)sender {
 }
-*/
+
+
+- (IBAction)tweetSelfie:(id)sender {
+}
+
 
 @end
