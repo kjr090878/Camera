@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D134A121BDEA44B00D13BD7 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D134A111BDEA44B00D13BD7 /* ChoiceViewController.swift */; };
+		3D134A141BDEA87100D13BD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D134A131BDEA87100D13BD7 /* LoginViewController.swift */; };
+		3D134A161BDEA9E700D13BD7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D134A151BDEA9E700D13BD7 /* RegisterViewController.swift */; };
+		3D134A181BDEAB1B00D13BD7 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D134A171BDEAB1B00D13BD7 /* AvatarViewController.swift */; };
+		3D43A3451BDE5F47000C6764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3441BDE5F47000C6764 /* AppDelegate.swift */; };
+		3D43A34C1BDE5F47000C6764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D43A34B1BDE5F47000C6764 /* Assets.xcassets */; };
+		3D43A35F1BDE621C000C6764 /* SelfieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A35A1BDE621C000C6764 /* SelfieTableViewController.m */; };
+		3D43A3601BDE621C000C6764 /* SelfieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A35C1BDE621C000C6764 /* SelfieTableViewCell.m */; };
+		3D43A3611BDE621C000C6764 /* SelfieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A35E1BDE621C000C6764 /* SelfieDetailViewController.m */; };
+		3D43A36D1BDE62C6000C6764 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3641BDE62C6000C6764 /* CaptureViewController.m */; };
+		3D43A36E1BDE62C6000C6764 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3661BDE62C6000C6764 /* FilterViewController.m */; };
+		3D43A36F1BDE62C6000C6764 /* FilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3681BDE62C6000C6764 /* FilterDataSource.m */; };
+		3D43A3701BDE62C6000C6764 /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A36A1BDE62C6000C6764 /* FilterCollectionViewCell.m */; };
+		3D43A3711BDE62C6000C6764 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A36C1BDE62C6000C6764 /* SubmitViewController.m */; };
+		3D43A37B1BDE62E7000C6764 /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3741BDE62E7000C6764 /* ChoiceViewController.m */; };
+		3D43A37C1BDE62E7000C6764 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3761BDE62E7000C6764 /* LoginViewController.m */; };
+		3D43A37D1BDE62E7000C6764 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3781BDE62E7000C6764 /* RegisterViewController.m */; };
+		3D43A3841BDE6521000C6764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D43A3811BDE6521000C6764 /* Main.storyboard */; };
+		3D43A3851BDE6521000C6764 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D43A3821BDE6521000C6764 /* Create.storyboard */; };
+		3D43A3861BDE6521000C6764 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D43A3831BDE6521000C6764 /* User.storyboard */; };
+		3D43A3881BDE65ED000C6764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D43A3871BDE65ED000C6764 /* LaunchScreen.storyboard */; };
+		3D43A3951BDE6786000C6764 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38A1BDE6786000C6764 /* SystemConfiguration.framework */; };
+		3D43A3961BDE6786000C6764 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38B1BDE6786000C6764 /* libz.1.dylib */; };
+		3D43A3971BDE6786000C6764 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38C1BDE6786000C6764 /* libsqlite3.dylib */; };
+		3D43A3981BDE6786000C6764 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38D1BDE6786000C6764 /* CoreLocation.framework */; };
+		3D43A3991BDE6786000C6764 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38E1BDE6786000C6764 /* StoreKit.framework */; };
+		3D43A39A1BDE6786000C6764 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A38F1BDE6786000C6764 /* Security.framework */; };
+		3D43A39B1BDE6786000C6764 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3901BDE6786000C6764 /* QuartzCore.framework */; };
+		3D43A39C1BDE6786000C6764 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3911BDE6786000C6764 /* CoreGraphics.framework */; };
+		3D43A39D1BDE6786000C6764 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3921BDE6786000C6764 /* AudioToolbox.framework */; };
+		3D43A39E1BDE6786000C6764 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3931BDE6786000C6764 /* Bolts.framework */; };
+		3D43A39F1BDE6786000C6764 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3941BDE6786000C6764 /* Parse.framework */; };
+		3D43A3A11BDE70E6000C6764 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3A01BDE70E6000C6764 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D134A111BDEA44B00D13BD7 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		3D134A131BDEA87100D13BD7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3D134A151BDEA9E700D13BD7 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3D134A171BDEAB1B00D13BD7 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		3D43A3411BDE5F47000C6764 /* Selfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D43A3441BDE5F47000C6764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D43A34B1BDE5F47000C6764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D43A3501BDE5F47000C6764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D43A3571BDE611E000C6764 /* ImageEditing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEditing.h; sourceTree = "<group>"; };
+		3D43A3581BDE621B000C6764 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = "<group>"; };
+		3D43A3591BDE621C000C6764 /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
+		3D43A35A1BDE621C000C6764 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
+		3D43A35B1BDE621C000C6764 /* SelfieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewCell.h; sourceTree = "<group>"; };
+		3D43A35C1BDE621C000C6764 /* SelfieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewCell.m; sourceTree = "<group>"; };
+		3D43A35D1BDE621C000C6764 /* SelfieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieDetailViewController.h; sourceTree = "<group>"; };
+		3D43A35E1BDE621C000C6764 /* SelfieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieDetailViewController.m; sourceTree = "<group>"; };
+		3D43A3631BDE62C6000C6764 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		3D43A3641BDE62C6000C6764 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		3D43A3651BDE62C6000C6764 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		3D43A3661BDE62C6000C6764 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		3D43A3671BDE62C6000C6764 /* FilterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterDataSource.h; sourceTree = "<group>"; };
+		3D43A3681BDE62C6000C6764 /* FilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterDataSource.m; sourceTree = "<group>"; };
+		3D43A3691BDE62C6000C6764 /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
+		3D43A36A1BDE62C6000C6764 /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
+		3D43A36B1BDE62C6000C6764 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
+		3D43A36C1BDE62C6000C6764 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
+		3D43A3731BDE62E7000C6764 /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		3D43A3741BDE62E7000C6764 /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		3D43A3751BDE62E7000C6764 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3D43A3761BDE62E7000C6764 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3D43A3771BDE62E7000C6764 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		3D43A3781BDE62E7000C6764 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		3D43A3791BDE62E7000C6764 /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
+		3D43A3811BDE6521000C6764 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3D43A3821BDE6521000C6764 /* Create.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
+		3D43A3831BDE6521000C6764 /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		3D43A3871BDE65ED000C6764 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D43A38A1BDE6786000C6764 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D43A38B1BDE6786000C6764 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		3D43A38C1BDE6786000C6764 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
+		3D43A38D1BDE6786000C6764 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D43A38E1BDE6786000C6764 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3D43A38F1BDE6786000C6764 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3D43A3901BDE6786000C6764 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3D43A3911BDE6786000C6764 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D43A3921BDE6786000C6764 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3D43A3931BDE6786000C6764 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
+		3D43A3941BDE6786000C6764 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		3D43A3A01BDE70E6000C6764 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D43A33E1BDE5F47000C6764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D43A3981BDE6786000C6764 /* CoreLocation.framework in Frameworks */,
+				3D43A3961BDE6786000C6764 /* libz.1.dylib in Frameworks */,
+				3D43A39B1BDE6786000C6764 /* QuartzCore.framework in Frameworks */,
+				3D43A3991BDE6786000C6764 /* StoreKit.framework in Frameworks */,
+				3D43A39C1BDE6786000C6764 /* CoreGraphics.framework in Frameworks */,
+				3D43A39E1BDE6786000C6764 /* Bolts.framework in Frameworks */,
+				3D43A39F1BDE6786000C6764 /* Parse.framework in Frameworks */,
+				3D43A39D1BDE6786000C6764 /* AudioToolbox.framework in Frameworks */,
+				3D43A3971BDE6786000C6764 /* libsqlite3.dylib in Frameworks */,
+				3D43A39A1BDE6786000C6764 /* Security.framework in Frameworks */,
+				3D43A3951BDE6786000C6764 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D134A191BDEAC8000D13BD7 /* User Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3D134A111BDEA44B00D13BD7 /* ChoiceViewController.swift */,
+				3D134A131BDEA87100D13BD7 /* LoginViewController.swift */,
+				3D134A151BDEA9E700D13BD7 /* RegisterViewController.swift */,
+				3D134A171BDEAB1B00D13BD7 /* AvatarViewController.swift */,
+			);
+			name = "User Swift";
+			sourceTree = "<group>";
+		};
+		3D43A3381BDE5F47000C6764 = {
+			isa = PBXGroup;
+			children = (
+				3D43A3431BDE5F47000C6764 /* Selfie */,
+				3D43A3421BDE5F47000C6764 /* Products */,
+				3D43A3891BDE66DF000C6764 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D43A3421BDE5F47000C6764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3411BDE5F47000C6764 /* Selfie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D43A3431BDE5F47000C6764 /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3811BDE6521000C6764 /* Main.storyboard */,
+				3D43A3821BDE6521000C6764 /* Create.storyboard */,
+				3D43A3831BDE6521000C6764 /* User.storyboard */,
+				3D43A3A01BDE70E6000C6764 /* SettingsViewController.swift */,
+				3D134A191BDEAC8000D13BD7 /* User Swift */,
+				3D43A3561BDE5FB7000C6764 /* ObjC */,
+				3D43A3801BDE6376000C6764 /* Supporting Files */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		3D43A3561BDE5FB7000C6764 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3571BDE611E000C6764 /* ImageEditing.h */,
+				3D43A37F1BDE62F5000C6764 /* User Flow */,
+				3D43A3721BDE62CD000C6764 /* Create Flow */,
+				3D43A3621BDE624C000C6764 /* Main Flow */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
+		3D43A3621BDE624C000C6764 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3591BDE621C000C6764 /* SelfieTableViewController.h */,
+				3D43A35A1BDE621C000C6764 /* SelfieTableViewController.m */,
+				3D43A35B1BDE621C000C6764 /* SelfieTableViewCell.h */,
+				3D43A35C1BDE621C000C6764 /* SelfieTableViewCell.m */,
+				3D43A35D1BDE621C000C6764 /* SelfieDetailViewController.h */,
+				3D43A35E1BDE621C000C6764 /* SelfieDetailViewController.m */,
+			);
+			name = "Main Flow";
+			sourceTree = "<group>";
+		};
+		3D43A3721BDE62CD000C6764 /* Create Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3631BDE62C6000C6764 /* CaptureViewController.h */,
+				3D43A3641BDE62C6000C6764 /* CaptureViewController.m */,
+				3D43A3651BDE62C6000C6764 /* FilterViewController.h */,
+				3D43A3661BDE62C6000C6764 /* FilterViewController.m */,
+				3D43A3671BDE62C6000C6764 /* FilterDataSource.h */,
+				3D43A3681BDE62C6000C6764 /* FilterDataSource.m */,
+				3D43A3691BDE62C6000C6764 /* FilterCollectionViewCell.h */,
+				3D43A36A1BDE62C6000C6764 /* FilterCollectionViewCell.m */,
+				3D43A36B1BDE62C6000C6764 /* SubmitViewController.h */,
+				3D43A36C1BDE62C6000C6764 /* SubmitViewController.m */,
+			);
+			name = "Create Flow";
+			sourceTree = "<group>";
+		};
+		3D43A37F1BDE62F5000C6764 /* User Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3731BDE62E7000C6764 /* ChoiceViewController.h */,
+				3D43A3741BDE62E7000C6764 /* ChoiceViewController.m */,
+				3D43A3751BDE62E7000C6764 /* LoginViewController.h */,
+				3D43A3761BDE62E7000C6764 /* LoginViewController.m */,
+				3D43A3771BDE62E7000C6764 /* RegisterViewController.h */,
+				3D43A3781BDE62E7000C6764 /* RegisterViewController.m */,
+				3D43A3791BDE62E7000C6764 /* AvatarViewController.h */,
+			);
+			name = "User Flow";
+			sourceTree = "<group>";
+		};
+		3D43A3801BDE6376000C6764 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A3871BDE65ED000C6764 /* LaunchScreen.storyboard */,
+				3D43A3441BDE5F47000C6764 /* AppDelegate.swift */,
+				3D43A3581BDE621B000C6764 /* Selfie-Bridging-Header.h */,
+				3D43A34B1BDE5F47000C6764 /* Assets.xcassets */,
+				3D43A3501BDE5F47000C6764 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D43A3891BDE66DF000C6764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D43A38A1BDE6786000C6764 /* SystemConfiguration.framework */,
+				3D43A38B1BDE6786000C6764 /* libz.1.dylib */,
+				3D43A38C1BDE6786000C6764 /* libsqlite3.dylib */,
+				3D43A38D1BDE6786000C6764 /* CoreLocation.framework */,
+				3D43A38E1BDE6786000C6764 /* StoreKit.framework */,
+				3D43A38F1BDE6786000C6764 /* Security.framework */,
+				3D43A3901BDE6786000C6764 /* QuartzCore.framework */,
+				3D43A3911BDE6786000C6764 /* CoreGraphics.framework */,
+				3D43A3921BDE6786000C6764 /* AudioToolbox.framework */,
+				3D43A3931BDE6786000C6764 /* Bolts.framework */,
+				3D43A3941BDE6786000C6764 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D43A3401BDE5F47000C6764 /* Selfie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D43A3531BDE5F47000C6764 /* Build configuration list for PBXNativeTarget "Selfie" */;
+			buildPhases = (
+				3D43A33D1BDE5F47000C6764 /* Sources */,
+				3D43A33E1BDE5F47000C6764 /* Frameworks */,
+				3D43A33F1BDE5F47000C6764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Selfie;
+			productName = Selfie;
+			productReference = 3D43A3411BDE5F47000C6764 /* Selfie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D43A3391BDE5F47000C6764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kelly Robinson";
+				TargetAttributes = {
+					3D43A3401BDE5F47000C6764 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D43A33C1BDE5F47000C6764 /* Build configuration list for PBXProject "Selfie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D43A3381BDE5F47000C6764;
+			productRefGroup = 3D43A3421BDE5F47000C6764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D43A3401BDE5F47000C6764 /* Selfie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D43A33F1BDE5F47000C6764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D43A34C1BDE5F47000C6764 /* Assets.xcassets in Resources */,
+				3D43A3861BDE6521000C6764 /* User.storyboard in Resources */,
+				3D43A3851BDE6521000C6764 /* Create.storyboard in Resources */,
+				3D43A3881BDE65ED000C6764 /* LaunchScreen.storyboard in Resources */,
+				3D43A3841BDE6521000C6764 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D43A33D1BDE5F47000C6764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D43A3711BDE62C6000C6764 /* SubmitViewController.m in Sources */,
+				3D43A3701BDE62C6000C6764 /* FilterCollectionViewCell.m in Sources */,
+				3D43A35F1BDE621C000C6764 /* SelfieTableViewController.m in Sources */,
+				3D43A3611BDE621C000C6764 /* SelfieDetailViewController.m in Sources */,
+				3D43A3451BDE5F47000C6764 /* AppDelegate.swift in Sources */,
+				3D134A181BDEAB1B00D13BD7 /* AvatarViewController.swift in Sources */,
+				3D43A36E1BDE62C6000C6764 /* FilterViewController.m in Sources */,
+				3D43A3601BDE621C000C6764 /* SelfieTableViewCell.m in Sources */,
+				3D43A37C1BDE62E7000C6764 /* LoginViewController.m in Sources */,
+				3D43A37D1BDE62E7000C6764 /* RegisterViewController.m in Sources */,
+				3D43A3A11BDE70E6000C6764 /* SettingsViewController.swift in Sources */,
+				3D43A36F1BDE62C6000C6764 /* FilterDataSource.m in Sources */,
+				3D43A36D1BDE62C6000C6764 /* CaptureViewController.m in Sources */,
+				3D134A141BDEA87100D13BD7 /* LoginViewController.swift in Sources */,
+				3D134A161BDEA9E700D13BD7 /* RegisterViewController.swift in Sources */,
+				3D134A121BDEA44B00D13BD7 /* ChoiceViewController.swift in Sources */,
+				3D43A37B1BDE62E7000C6764 /* ChoiceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D43A3511BDE5F47000C6764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D43A3521BDE5F47000C6764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D43A3541BDE5F47000C6764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/kellyrobinson/_resources/Frameworks/**";
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.Selfie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie/Selfie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D43A3551BDE5F47000C6764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "/Users/kellyrobinson/_resources/Frameworks/**";
+				INFOPLIST_FILE = Selfie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.Selfie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Selfie/Selfie-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D43A33C1BDE5F47000C6764 /* Build configuration list for PBXProject "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D43A3511BDE5F47000C6764 /* Debug */,
+				3D43A3521BDE5F47000C6764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D43A3531BDE5F47000C6764 /* Build configuration list for PBXNativeTarget "Selfie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D43A3541BDE5F47000C6764 /* Debug */,
+				3D43A3551BDE5F47000C6764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D43A3391BDE5F47000C6764 /* Project object */;
+}
