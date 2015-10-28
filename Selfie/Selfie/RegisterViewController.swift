@@ -29,11 +29,11 @@ class RegisterViewController: UIViewController {
         
         super.viewDidLoad()
         
-        func myMethod() {
+        
             let user = PFUser()
-            user.username = "myUsername"
-            user.password = "myPassword"
-            user.email = "email@example.com"
+            user.username = 
+            user.password =
+            user.email =
             
             
             user.signUpInBackgroundWithBlock {
@@ -61,9 +61,10 @@ class RegisterViewController: UIViewController {
     }
     
     
-    @IBAction func next(sender: AnyObject) {
-    }
+   
     
+    @IBAction func register(sender: AnyObject) {
+    }
     
     @IBAction func back(sender: AnyObject) {
         

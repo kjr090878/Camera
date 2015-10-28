@@ -12,7 +12,9 @@ import UIKit
 
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UINavigationControllerDelegate {
+    
+  
     
     
     @IBOutlet weak var username: UITextField!
@@ -33,13 +35,27 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsernameInBackground(username.text!, password: password.text!) { (user, error) -> Void in
             
             //        if (user != nil) {
+            
+            if user != nil {
+                
+                print("\"(logged in)")
+                
+            }
             //
             //            NSLog(@"logged in");
+            
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             //
             //            UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            
             //            UINavigationController * nc = [mainStoryboard instantiateInitialViewController];
+            
+           let nc = storyboard.instantiateInitialViewController() as! UINavigationController
+            
             //
             //            [UIApplication sharedApplication].windows[0].rootViewController = nc;
+            
+            UIApplication.sharedApplication().keyWindow!.rootViewController = nc
             //
             //
             //        }

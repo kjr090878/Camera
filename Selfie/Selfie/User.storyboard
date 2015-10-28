@@ -255,7 +255,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="RUa-Zq-tnn" eventType="touchUpInside" id="5tN-fK-Wcg"/>
+                                    <action selector="register:" destination="RUa-Zq-tnn" eventType="touchUpInside" id="Vpv-54-Kbw"/>
                                     <segue destination="MBV-5S-hcK" kind="show" id="Wc9-WS-NYn"/>
                                 </connections>
                             </button>
