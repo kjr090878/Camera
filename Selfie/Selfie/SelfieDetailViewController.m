@@ -1,40 +1,40 @@
+////
+////  SelfieDetailViewController.m
+////  Camera
+////
+////  Created by Kelly Robinson on 10/19/15.
+////  Copyright © 2015 Kelly Robinson. All rights reserved.
+////
 //
-//  SelfieDetailViewController.m
-//  Camera
+//#import "SelfieDetailViewController.h"
 //
-//  Created by Kelly Robinson on 10/19/15.
-//  Copyright © 2015 Kelly Robinson. All rights reserved.
+//@interface SelfieDetailViewController ()
 //
-
-#import "SelfieDetailViewController.h"
-
-@interface SelfieDetailViewController ()
-
-@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
-
-
-@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
-@property (weak, nonatomic) IBOutlet UITextView *captionTextView;
-
-
-@end
-
-@implementation SelfieDetailViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (IBAction)flagSelfie:(id)sender {
-}
-
-- (IBAction)winkSelfie:(id)sender {
-}
-
-
-- (IBAction)tweetSelfie:(id)sender {
-}
-
-
-@end
+//@property (weak, nonatomic) IBOutlet UIImageView *selfieImageView;
+//
+//
+//@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+//@property (weak, nonatomic) IBOutlet UITextView *captionTextView;
+//
+//
+//@end
+//
+//@implementation SelfieDetailViewController
+//
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    // Do any additional setup after loading the view.
+//}
+//
+//- (IBAction)flagSelfie:(id)sender {
+//}
+//
+//- (IBAction)winkSelfie:(id)sender {
+//}
+//
+//
+//- (IBAction)tweetSelfie:(id)sender {
+//}
+//
+//
+//@end

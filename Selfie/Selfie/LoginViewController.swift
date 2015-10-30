@@ -44,18 +44,18 @@ class LoginViewController: UIViewController, UINavigationControllerDelegate {
             //
             //            NSLog(@"logged in");
             
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             //
             //            UIStoryboard * mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
             
             //            UINavigationController * nc = [mainStoryboard instantiateInitialViewController];
             
-           let nc = storyboard.instantiateInitialViewController() as! UINavigationController
+           let nc = mainStoryboard.instantiateInitialViewController() as! UINavigationController
             
             //
             //            [UIApplication sharedApplication].windows[0].rootViewController = nc;
             
-            UIApplication.sharedApplication().keyWindow!.rootViewController = nc
+            UIApplication.sharedApplication().windows[0].rootViewController = nc
             //
             //
             //        }

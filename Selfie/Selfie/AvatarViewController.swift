@@ -17,9 +17,9 @@ class AvatarViewController: UIViewController {
     
     
     @IBOutlet weak var avatarImageViewController: UIImageView!
+  
     
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,7 +28,7 @@ class AvatarViewController: UIViewController {
     
     @IBAction func back(sender: AnyObject) {
         
-        //    [self.navigationController popViewControllerAnimated:YES];
+      
         
         self.navigationController?.popViewControllerAnimated(true)
         

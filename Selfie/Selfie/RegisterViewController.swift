@@ -15,55 +15,42 @@ import Parse
 
 class RegisterViewController: UIViewController {
     
-    
     @IBOutlet weak var emailViewController: UITextField!
     
     @IBOutlet weak var passwordViewController: UITextField!
     
     @IBOutlet weak var usernameViewController: UITextField!
     
-    
-    
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        
-            let user = PFUser()
-            user.username = 
-            user.password =
-            user.email =
-            
-            
-            user.signUpInBackgroundWithBlock {
-                (succeeded: Bool, error: NSError?) -> Void in
-                if let error = error {
-                    let errorString = error.userInfo["error"] as? NSString
-                    print(errorString)
-                    
-                    // Show the errorString somewhere and let the user try again.
-                } else {
-                    // Hooray! Let them use the app now.
-                }
-            }
-        }
-        
-        PFUser.logInWithUsernameInBackground("myname", password:"mypass") {
-            (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
-                // Do stuff after successful login.
-            } else {
-                // The login failed. Check error to see why.
-            }
-        }
-        
-    }
-    
-    
-   
-    
     @IBAction func register(sender: AnyObject) {
+        
+        let user = PFUser()
+        
+        user.username = self.usernameViewController.text
+        user.password = self.passwordViewController.text
+        user.email = self.emailViewController.text
+        
+        user.signUpInBackgroundWithBlock { (succeeded: Bool, error) -> Void in
+        
+            if error == nil {
+            
+            
+            } else {
+                
+                print("signed up")
+                
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                
+                let nc = mainStoryboard.instantiateInitialViewController() as! UINavigationController
+                
+                
+                UIApplication.sharedApplication().windows[0].rootViewController = nc
+                
+            }
+        
+        }
+        
+        
     }
     
     @IBAction func back(sender: AnyObject) {

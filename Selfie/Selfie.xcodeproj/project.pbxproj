@@ -40,6 +40,14 @@
 		3D43A39E1BDE6786000C6764 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3931BDE6786000C6764 /* Bolts.framework */; };
 		3D43A39F1BDE6786000C6764 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D43A3941BDE6786000C6764 /* Parse.framework */; };
 		3D43A3A11BDE70E6000C6764 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43A3A01BDE70E6000C6764 /* SettingsViewController.swift */; };
+		3D741C471BE14545003192BD /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C461BE14545003192BD /* SubmitViewController.swift */; };
+		3D741C491BE14675003192BD /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C481BE14675003192BD /* CaptureViewController.swift */; };
+		3D741C4B1BE146AB003192BD /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C4A1BE146AB003192BD /* FilterCollectionViewCell.swift */; };
+		3D741C4D1BE1472E003192BD /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C4C1BE1472E003192BD /* FilterViewController.swift */; };
+		3D741C4F1BE148A8003192BD /* SelfieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C4E1BE148A8003192BD /* SelfieTableViewController.swift */; };
+		3D741C511BE148C2003192BD /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C501BE148C2003192BD /* SelfieTableViewCell.swift */; };
+		3D741C551BE14A4F003192BD /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C541BE14A4F003192BD /* AvatarViewController.m */; };
+		3D741C571BE199EB003192BD /* SelfieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D741C561BE199EB003192BD /* SelfieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +100,14 @@
 		3D43A3931BDE6786000C6764 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		3D43A3941BDE6786000C6764 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../_resources/Frameworks/Parse/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		3D43A3A01BDE70E6000C6764 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3D741C461BE14545003192BD /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		3D741C481BE14675003192BD /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		3D741C4A1BE146AB003192BD /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D741C4C1BE1472E003192BD /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		3D741C4E1BE148A8003192BD /* SelfieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewController.swift; sourceTree = "<group>"; };
+		3D741C501BE148C2003192BD /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
+		3D741C541BE14A4F003192BD /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
+		3D741C561BE199EB003192BD /* SelfieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +163,8 @@
 		3D43A3431BDE5F47000C6764 /* Selfie */ = {
 			isa = PBXGroup;
 			children = (
+				3D741C3D1BE143B6003192BD /* Create Flow Swift */,
+				3D741C361BE13D3A003192BD /* Main Flow Swift */,
 				3D43A3811BDE6521000C6764 /* Main.storyboard */,
 				3D43A3821BDE6521000C6764 /* Create.storyboard */,
 				3D43A3831BDE6521000C6764 /* User.storyboard */,
@@ -209,6 +227,7 @@
 				3D43A3771BDE62E7000C6764 /* RegisterViewController.h */,
 				3D43A3781BDE62E7000C6764 /* RegisterViewController.m */,
 				3D43A3791BDE62E7000C6764 /* AvatarViewController.h */,
+				3D741C541BE14A4F003192BD /* AvatarViewController.m */,
 			);
 			name = "User Flow";
 			sourceTree = "<group>";
@@ -241,6 +260,27 @@
 				3D43A3941BDE6786000C6764 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D741C361BE13D3A003192BD /* Main Flow Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3D741C4E1BE148A8003192BD /* SelfieTableViewController.swift */,
+				3D741C501BE148C2003192BD /* SelfieTableViewCell.swift */,
+				3D741C561BE199EB003192BD /* SelfieDetailViewController.swift */,
+			);
+			name = "Main Flow Swift";
+			sourceTree = "<group>";
+		};
+		3D741C3D1BE143B6003192BD /* Create Flow Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3D741C461BE14545003192BD /* SubmitViewController.swift */,
+				3D741C481BE14675003192BD /* CaptureViewController.swift */,
+				3D741C4A1BE146AB003192BD /* FilterCollectionViewCell.swift */,
+				3D741C4C1BE1472E003192BD /* FilterViewController.swift */,
+			);
+			name = "Create Flow Swift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D741C4D1BE1472E003192BD /* FilterViewController.swift in Sources */,
 				3D43A3711BDE62C6000C6764 /* SubmitViewController.m in Sources */,
 				3D43A3701BDE62C6000C6764 /* FilterCollectionViewCell.m in Sources */,
 				3D43A35F1BDE621C000C6764 /* SelfieTableViewController.m in Sources */,
@@ -326,12 +367,19 @@
 				3D43A3601BDE621C000C6764 /* SelfieTableViewCell.m in Sources */,
 				3D43A37C1BDE62E7000C6764 /* LoginViewController.m in Sources */,
 				3D43A37D1BDE62E7000C6764 /* RegisterViewController.m in Sources */,
+				3D741C4F1BE148A8003192BD /* SelfieTableViewController.swift in Sources */,
+				3D741C4B1BE146AB003192BD /* FilterCollectionViewCell.swift in Sources */,
+				3D741C551BE14A4F003192BD /* AvatarViewController.m in Sources */,
 				3D43A3A11BDE70E6000C6764 /* SettingsViewController.swift in Sources */,
+				3D741C491BE14675003192BD /* CaptureViewController.swift in Sources */,
+				3D741C471BE14545003192BD /* SubmitViewController.swift in Sources */,
 				3D43A36F1BDE62C6000C6764 /* FilterDataSource.m in Sources */,
+				3D741C511BE148C2003192BD /* SelfieTableViewCell.swift in Sources */,
 				3D43A36D1BDE62C6000C6764 /* CaptureViewController.m in Sources */,
 				3D134A141BDEA87100D13BD7 /* LoginViewController.swift in Sources */,
 				3D134A161BDEA9E700D13BD7 /* RegisterViewController.swift in Sources */,
 				3D134A121BDEA44B00D13BD7 /* ChoiceViewController.swift in Sources */,
+				3D741C571BE199EB003192BD /* SelfieDetailViewController.swift in Sources */,
 				3D43A37B1BDE62E7000C6764 /* ChoiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
