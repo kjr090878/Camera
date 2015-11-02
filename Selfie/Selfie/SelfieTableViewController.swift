@@ -66,7 +66,7 @@ class SelfieTableViewController: UITableViewController {
         
         selfieQuery.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
             
-            for selfie in objects.
+            for selfie in objects(PFObject
             
         }
         
