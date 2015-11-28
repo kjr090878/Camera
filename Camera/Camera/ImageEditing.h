@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#ifndef ImageEditing_h
+//
+//#ifndef ImageEditing_h
 #define ImageEditing_h
 
 static UIImage * resizeImage(UIImage * image, CGSize newSize) {
